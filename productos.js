@@ -1,5 +1,5 @@
 const contenedor = document.getElementById("contenedor");
-
+ 
 let productos = [
   {
     id: 1,
@@ -27,6 +27,8 @@ let productos = [
   },
 ];
 
+let carroCompras = [];
+
 productos.forEach(item => {
   let productoDom = document.createElement("div");
   productoDom.innerHTML = `
@@ -41,6 +43,7 @@ productos.forEach(item => {
   const button = document.getElementById(item.id);
   button.addEventListener("click", () => agregaCarrito(item));
 });
+
 
 const agregaCarrito = (item) => {
   let productoStock = carroCompras.find((producto) => producto.id === item.id);
