@@ -27,16 +27,13 @@ let productos = [
   },
 ];
 
-let carroCompras = [];
-
-productos.forEach((item) => {
+productos.forEach(item => {
   let productoDom = document.createElement("div");
-  productoDom.innerHTML = `<div class="producto">
+  productoDom.innerHTML = `
     <img src="${item.imagen}">
     <h4>${item.nombre}</h4>
     <p>Precio: $ ${item.precio}</p>
-    <button id=${item.id}>Agregar al carro</button>
-    </div>
+    <button id=${item.id}>Agregar al carro</button>   
     `;
 
   div.append(productoDom);
