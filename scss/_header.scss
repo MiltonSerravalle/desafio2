@@ -1,0 +1,120 @@
+/* HEADER */
+.conteiner {
+  .bodyHeader {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @include responsive(mobile) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      img {
+        justify-content: center;
+        width: 300px;
+        height: 200px;
+        margin-right: 40px;
+      }
+    }
+  }
+
+  .bodyHeaderNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 350px;
+
+    @include responsive(mobile) {
+      position: absolute;
+      width: 50%;
+      margin-left: -70%;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      
+
+      .enCarrito {
+        padding: 10px;
+        padding-top: 15px;
+        width: 20%;
+        height: 20px;
+       
+      }
+    
+
+    img {
+      width: 10%;
+      padding: 5px;
+    }
+}
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: black;
+      justify-content: center;
+      border-radius: 15px;
+      width: 100%;
+
+      @include responsive(mobile) {
+        flex-direction: column;
+      }
+
+      li a {
+        font-size: 20px;
+        color: white;
+        display: block;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-family: "Oswald", sans-serif;
+
+        @include responsive(mobile) {
+          box-sizing: border-box;
+          display: block;
+          width: 100%;
+          border-top: 1px solid #333;
+        }
+
+        &:hover {
+          background: $the-green;
+          color: rgb(14, 1, 1);
+        }
+      }
+    }
+  }
+
+  .bodyHeaderMenu {
+    label {
+      display: none;
+
+      @include responsive(mobile) {
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 5px;
+        display: block;
+        color: rgb(0, 0, 0);
+        background: #ffffff;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 5px;
+      }
+    }
+
+    #buttonMenu {
+      display: none;
+
+      &:checked ~ .bodyHeaderNav {
+        margin: 0;
+      }
+    }
+  }
+}

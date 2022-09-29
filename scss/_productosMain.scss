@@ -1,0 +1,194 @@
+/*MAIN PRODUCTOS*/
+
+.mainProduct {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 100vw;
+  padding-top: 20px;
+
+  .buzos {
+    h1 {
+      background: $the-green;
+      text-align: center;
+      border-radius: 10px;
+      width: 350px;
+      margin: auto;
+      font-family: "Oswald", sans-serif;
+      height: 40px;
+      margin-top: 15px;
+
+      @include responsive(tablet) {
+        width: 200px;
+      }
+    }
+
+    .buzosProduct {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 15px;
+
+      @include responsive(tablet) {
+        flex-direction: column;
+      }
+
+      .buzosProductItem {
+        border: 2px solid $the-green;
+        padding-bottom: 5px;
+
+        @include responsive(tablet) {
+          width: 300px;
+          justify-content: center;
+          margin: auto;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+
+        img {
+          width: 300px;
+        }
+
+        h3 {
+          color: $the-green;
+          font-size: 25px;
+          font-family: "Oswald", sans-serif;
+        }
+
+        h4 {
+          color: $the-green;
+          font-family: "Oswald", sans-serif;
+          font-size: 15px;
+        }
+
+        .buzosImg {
+          &:hover {
+            transition: 0.2s;
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 5px 0px #000000;
+            border: 5px solid $the-green;
+          }
+        }
+
+        .productText {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .botonCompra {
+          color: $the-green;
+          text-align: center;
+          font-family: "Oswald", sans-serif;
+          border: 3px solid $the-green;
+          border-radius: 10px;
+          font-size: 18px;
+          width: 100px;
+          margin-top: 5px;
+          &:hover {
+            background-color: $the-green;
+            color: black;
+            transition: 0.2s;
+            transform: translateY(-2px) scale(1.1);
+
+          }
+        }
+      }
+    }
+  }
+
+  .remeras {
+    h1 {
+      background: $the-green;
+      text-align: center;
+      border-radius: 10px;
+      width: 350px;
+      margin: auto;
+      font-family: "Oswald", sans-serif;
+      height: 40px;
+      margin-top: 15px;
+
+      @include responsive(tablet) {
+        width: 200px;
+      }
+    }
+
+    .remerasProduct {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 15px;
+
+      @include responsive(tablet) {
+        flex-direction: column;
+      }
+
+      .remerasProductItem {
+        border: 2px solid $the-green;
+        padding-bottom: 5px;
+
+        @include responsive(tablet) {
+          width: 300px;
+          justify-content: center;
+          margin: auto;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+
+        img {
+          width: 300px;
+        }
+
+        h3 {
+          color: $the-green;
+          font-size: 25px;
+          font-family: "Oswald", sans-serif;
+        }
+
+        h4 {
+          color: $the-green;
+          font-family: "Oswald", sans-serif;
+          font-size: 15px;
+        }
+
+        .remerasImg {
+          &:hover {
+            transition: 0.2s;
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 5px 0px #000000;
+            border: 5px solid $the-green;
+          }
+        }
+
+        .productText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .botonCompra {
+            color: $the-green;
+            text-align: center;
+            font-family: "Oswald", sans-serif;
+            border: 3px solid $the-green;
+            border-radius: 10px;
+            font-size: 18px;
+            width: 100px;
+            margin-top: 5px;
+            &:hover {
+              background-color: $the-green;
+              color: black;
+              transition: 0.2s;
+              transform: translateY(-2px) scale(1.1);
+  
+            }
+          }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+/*GRID CONTEINER*/
+.conteiner {
+    display: grid;
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 1.5fr 1fr;
+
+    @include responsive (ajuste) {
+        grid-template-columns: 1fr;
+    }
+}

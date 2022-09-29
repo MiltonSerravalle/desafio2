@@ -1,0 +1,92 @@
+/*MAIN COMPRAR*/
+
+.comprarMain {
+    grid-area: main;
+    background: #000000;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .comprarSeccion1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @include responsive (tablet) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .seccion1H1 {
+            background-color: $the-green;
+            color: black;
+            text-align: center;
+            border-radius: 10px;
+            width: 350px;
+            margin: auto;
+            font-family: 'Oswald', sans-serif;
+            height: 40px;
+            padding-bottom: 25px;
+
+        }
+
+        .comprarList {
+            background-color: $the-green;
+            font-family: 'Oswald', sans-serif;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            width: 600px;
+            font-size: 1.30rem;
+
+            @include responsive (tablet) {
+                width: 250px;
+                font-size: 1rem;
+            }
+
+            ul {
+
+                text-align: center;
+                margin: 30px;
+
+                @include responsive (tablet) {
+                    text-align: left;
+                    margin: 10px;
+                }
+
+                li {
+                    margin: 40px;
+
+                    @include responsive (tablet) {
+                        margin: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .comprarSeccion2 {
+        p {
+            background-color: $the-green;
+            text-align: center;
+            border-radius: 10px;
+            width: 250px;
+            margin: auto;
+            margin-top: 20px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+        }
+
+        table {
+            background: $the-green;
+            text-align: center;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            font-family: 'Oswald', sans-serif;
+        }
+    }
+}

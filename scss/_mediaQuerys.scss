@@ -1,0 +1,18 @@
+$ajuste: 768px;
+$tablet: 598px;
+$mobile: 525px;
+
+@mixin responsive ($medida) {
+    @if $medida == ajuste {
+        @media screen and (max-width:768px){
+            @content;
+        }
+    } @else if $medida == tablet {
+        @media screen and (max-width:598px) {
+            @content;}
+        } @else if $medida == mobile {
+            @media screen and (max-width:525px){
+                @content;
+            }
+        }
+    }
